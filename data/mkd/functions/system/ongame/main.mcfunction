@@ -35,14 +35,14 @@ tag @a remove SetRespawn
 
 ## Conduit system
 execute as @a[team=Police,scores={Death=1..}] run function mkd:system/ongame/conduit/gunpowder_drop
-execute as @a[team=Robber,nbt={SelectedItem:{id:"minecraft:conduit"}}] run function mkd:system/ongame/conduit/weapon_mainhand
-execute as @a[team=Robber,nbt={Inventory:[{Slot:-106b,id:"minecraft:conduit"}]}] run function mkd:system/ongame/conduit/weapon_offhand
+execute as @a[team=Robber,nbt={SelectedItem:{id:"minecraft:conduit"}}] unless data entity @s SelectedItem.tag run function mkd:system/ongame/conduit/weapon_mainhand
+#execute as @a[team=Robber,nbt={Inventory:[{Slot:-106b,id:"minecraft:conduit"}]},nbt=!{Inventory:[{Slot:-106b,id:"minecraft:conduit",tag:{CanPlaceOn:[{id:"minecraft:stone_pressure_plate"}]}}]}] run function mkd:system/ongame/conduit/weapon_offhand
 execute if entity @p[team=Robber,scores={UseConduit=1..}] as @e[type=minecraft:area_effect_cloud,nbt={Tags:["save"]},scores={SetPrison=3,PrisonBroken=0}] run function mkd:system/ongame/conduit/prison_break/branch
 execute if entity @p[team=Robber,scores={UseConduit=1..}] as @e[type=minecraft:area_effect_cloud,nbt={Tags:["save"]},scores={SetPrison=3,PrisonSize=3,PrisonBroken=1}] run function mkd:system/ongame/conduit/prison_break/branch_2nd
 
 ## Judge win / loss
 execute unless entity @e[type=minecraft:area_effect_cloud,nbt={Tags:["save"]},scores={SetPrison=3,PrisonBroken=0}] run scoreboard players set #Keidoro Phase 11
-#execute unless entity @p[team=Robber,scores={Arrested=0}] run scoreboard players set #Keidoro Phase 12
+execute unless entity @p[team=Robber,scores={Arrested=0}] run scoreboard players set #Keidoro Phase 12
 
 ## Game Finish
 scoreboard players set #Keidoro Arrested 0

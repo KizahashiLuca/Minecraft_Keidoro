@@ -15,7 +15,7 @@ tellraw @a ["",{"text":"         Setting Start","color":"green","bold":true}]
 tellraw @a ["",{"text":"          - 設定開始 -","color":"green","bold":true}]
 tellraw @a ["",{"text":"-----------------------------","color":"white"}]
 tellraw @a ["",{"text":"  ","color":"white"},{"selector":"@p[tag=Host]","color":"green","bold":true},{"text":" はインベントリで","color":"white"}]
-tellraw @s ["",{"text":"  初期設定を開始してください。","color":"white"}]
+tellraw @a ["",{"text":"  初期設定を開始してください。","color":"white"}]
 tellraw @a ["",{"text":"-----------------------------","color":"white"}]
 tellraw @a [""]
 

@@ -30,7 +30,7 @@ tellraw @a ["",{"text":"    制限時間   :   ","color":"white"},{"score":{"nam
 tellraw @a ["",{"text":"-----------------------------","color":"white"}]
 tellraw @a ["",{"text":"  ","color":"white"},{"selector":"@p[tag=Host]","color":"green","bold":true},{"text":" は","color":"white"}]
 tellraw @a ["",{"text":"  ","color":"white"},{"translate":"item.minecraft.carrot_on_a_stick","color":"green","bold":true},{"text":" で右クリックして"}]
-tellraw @s ["",{"text":"  牢屋の位置を設定してください。","color":"white"}]
+tellraw @a ["",{"text":"  牢屋の位置を設定してください。","color":"white"}]
 tellraw @a ["",{"text":"-----------------------------","color":"white"}]
 tellraw @a [""]
 

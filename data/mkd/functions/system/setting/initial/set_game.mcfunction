@@ -24,7 +24,7 @@ clear @a
 effect clear @a
 experience set @a 0 points
 gamemode adventure @a[gamemode=!spectator]
-recipe give kizahashiluca mkd:tnt
+recipe give @a mkd:tnt
 
 ## Add tags
 tag @p[sort=nearest] add Host
