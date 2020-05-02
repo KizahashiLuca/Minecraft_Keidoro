@@ -36,7 +36,7 @@ tag @a remove SetRespawn
 ## Conduit system
 execute as @a[team=Police,scores={Death=1..}] run function mkd:system/ongame/conduit/gunpowder_drop
 execute as @a[team=Robber,nbt={SelectedItem:{id:"minecraft:conduit"}}] unless data entity @s SelectedItem.tag run function mkd:system/ongame/conduit/weapon_mainhand
-#execute as @a[team=Robber,nbt={Inventory:[{Slot:-106b,id:"minecraft:conduit"}]},nbt=!{Inventory:[{Slot:-106b,id:"minecraft:conduit",tag:{CanPlaceOn:[{id:"minecraft:stone_pressure_plate"}]}}]}] run function mkd:system/ongame/conduit/weapon_offhand
+#execute as @a[team=Robber,nbt={Inventory:[{Slot:-106b,id:"minecraft:conduit"}]},nbt=!{Inventory:[{Slot:-106b,id:"minecraft:conduit",tag:{CanPlaceOn:[{id:"minecraft:iron_door"}]}}]}] run function mkd:system/ongame/conduit/weapon_offhand
 execute if entity @p[team=Robber,scores={UseConduit=1..}] as @e[type=minecraft:area_effect_cloud,nbt={Tags:["save"]},scores={SetPrison=3,PrisonBroken=0}] run function mkd:system/ongame/conduit/prison_break/branch
 execute if entity @p[team=Robber,scores={UseConduit=1..}] as @e[type=minecraft:area_effect_cloud,nbt={Tags:["save"]},scores={SetPrison=3,PrisonSize=3,PrisonBroken=1}] run function mkd:system/ongame/conduit/prison_break/branch_2nd
 
