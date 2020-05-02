@@ -1,0 +1,25 @@
+###############################
+## Minecraft Version 1.15.2
+## Minecraft Keidoro
+## Author : KizahashiLuca
+## Date   : 02 May 2020
+## Version: alpha-0.1
+###############################
+
+## Branch prison - small
+execute if score @s PrisonSize matches 1 if score @s PrisonRot matches 0 run spawnpoint @p[team=Police,tag=SettingRespawn] ~ ~ ~-3
+execute if score @s PrisonSize matches 1 if score @s PrisonRot matches 1 run spawnpoint @p[team=Police,tag=SettingRespawn] ~3 ~ ~
+execute if score @s PrisonSize matches 1 if score @s PrisonRot matches 2 run spawnpoint @p[team=Police,tag=SettingRespawn] ~ ~ ~3
+execute if score @s PrisonSize matches 1 if score @s PrisonRot matches 3 run spawnpoint @p[team=Police,tag=SettingRespawn] ~-3 ~ ~
+
+## Branch prison - medium
+execute if score @s PrisonSize matches 2 if score @s PrisonRot matches 0 run spawnpoint @p[team=Police,tag=SettingRespawn] ~ ~ ~-5
+execute if score @s PrisonSize matches 2 if score @s PrisonRot matches 1 run spawnpoint @p[team=Police,tag=SettingRespawn] ~5 ~ ~
+execute if score @s PrisonSize matches 2 if score @s PrisonRot matches 2 run spawnpoint @p[team=Police,tag=SettingRespawn] ~ ~ ~5
+execute if score @s PrisonSize matches 2 if score @s PrisonRot matches 3 run spawnpoint @p[team=Police,tag=SettingRespawn] ~-5 ~ ~
+
+## Branch prison - big
+execute if score @s PrisonSize matches 3 if score @s PrisonRot matches 0 run spawnpoint @p[team=Police,tag=SettingRespawn] ~ ~ ~-7
+execute if score @s PrisonSize matches 3 if score @s PrisonRot matches 1 run spawnpoint @p[team=Police,tag=SettingRespawn] ~7 ~ ~
+execute if score @s PrisonSize matches 3 if score @s PrisonRot matches 2 run spawnpoint @p[team=Police,tag=SettingRespawn] ~ ~ ~7
+execute if score @s PrisonSize matches 3 if score @s PrisonRot matches 3 run spawnpoint @p[team=Police,tag=SettingRespawn] ~-7 ~ ~

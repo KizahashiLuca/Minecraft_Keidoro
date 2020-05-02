@@ -1,0 +1,12 @@
+###############################
+## Minecraft Version 1.15.2
+## Minecraft Keidoro
+## Author : KizahashiLuca
+## Date   : 02 May 2020
+## Version: alpha-0.1
+###############################
+
+## Plus 10
+scoreboard players add #Keidoro NumRobber 10
+execute if score #Keidoro NumRobber > #Keidoro NumRobberMax run scoreboard players operation #Keidoro NumRobber = #Keidoro NumRobberMax
+function mkd:system/setting/choose_num_robber/change_to
