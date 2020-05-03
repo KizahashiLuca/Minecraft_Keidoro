@@ -8,7 +8,7 @@
 
 ## Set gamerule
 gamerule announceAdvancements false
-#gamerule sendCommandFeedback false
+gamerule sendCommandFeedback false
 gamerule commandBlockOutput false
 gamerule showDeathMessages false
 gamerule doLimitedCrafting true
