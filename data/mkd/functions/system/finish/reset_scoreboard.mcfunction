@@ -21,6 +21,7 @@ scoreboard objectives remove NumRobber
 scoreboard objectives remove NumBurglar
 scoreboard objectives remove TimeGetaway
 scoreboard objectives remove TimeLimit
+scoreboard objectives remove Teleport
 scoreboard objectives remove SECOND
 scoreboard objectives remove TICK
 ## Remove scoreboards for prison area
