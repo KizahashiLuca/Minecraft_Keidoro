@@ -36,22 +36,22 @@ execute if score @s PrisonRot matches 2 run scoreboard players remove @s PrisonM
 execute if score @s PrisonRot matches 3 run scoreboard players add @s PrisonMinX 1
 
 ## Merge data structure_block - small 
-execute if score @s PrisonSize matches 1 if score @s PrisonRot matches 0 run data merge block ~ ~ ~ {name:"mkd:prison_small",posX:-3,posZ:-2,rotation:"NONE"}
-execute if score @s PrisonSize matches 1 if score @s PrisonRot matches 1 run data merge block ~ ~ ~ {name:"mkd:prison_small",posX:2,posZ:-3,rotation:"CLOCKWISE_90"}
-execute if score @s PrisonSize matches 1 if score @s PrisonRot matches 2 run data merge block ~ ~ ~ {name:"mkd:prison_small",posX:3,posZ:2,rotation:"CLOCKWISE_180"}
-execute if score @s PrisonSize matches 1 if score @s PrisonRot matches 3 run data merge block ~ ~ ~ {name:"mkd:prison_small",posX:-2,posZ:3,rotation:"COUNTERCLOCKWISE_90"}
+execute if score @s PrisonSize matches 1 if score @s PrisonRot matches 0 run data merge block ~ ~ ~ {name:"mkd:prison_small",posX:-3,posZ:-3,rotation:"NONE"}
+execute if score @s PrisonSize matches 1 if score @s PrisonRot matches 1 run data merge block ~ ~ ~ {name:"mkd:prison_small",posX:3,posZ:-3,rotation:"CLOCKWISE_90"}
+execute if score @s PrisonSize matches 1 if score @s PrisonRot matches 2 run data merge block ~ ~ ~ {name:"mkd:prison_small",posX:3,posZ:3,rotation:"CLOCKWISE_180"}
+execute if score @s PrisonSize matches 1 if score @s PrisonRot matches 3 run data merge block ~ ~ ~ {name:"mkd:prison_small",posX:-3,posZ:3,rotation:"COUNTERCLOCKWISE_90"}
 
 ## Merge data structure_block - medium 
-execute if score @s PrisonSize matches 2 if score @s PrisonRot matches 0 run data merge block ~ ~ ~ {name:"mkd:prison_medium",posX:-5,posZ:-4,rotation:"NONE"}
-execute if score @s PrisonSize matches 2 if score @s PrisonRot matches 1 run data merge block ~ ~ ~ {name:"mkd:prison_medium",posX:4,posZ:-5,rotation:"CLOCKWISE_90"}
-execute if score @s PrisonSize matches 2 if score @s PrisonRot matches 2 run data merge block ~ ~ ~ {name:"mkd:prison_medium",posX:5,posZ:4,rotation:"CLOCKWISE_180"}
-execute if score @s PrisonSize matches 2 if score @s PrisonRot matches 3 run data merge block ~ ~ ~ {name:"mkd:prison_medium",posX:-4,posZ:5,rotation:"COUNTERCLOCKWISE_90"}
+execute if score @s PrisonSize matches 2 if score @s PrisonRot matches 0 run data merge block ~ ~ ~ {name:"mkd:prison_medium",posX:-5,posZ:-5,rotation:"NONE"}
+execute if score @s PrisonSize matches 2 if score @s PrisonRot matches 1 run data merge block ~ ~ ~ {name:"mkd:prison_medium",posX:5,posZ:-5,rotation:"CLOCKWISE_90"}
+execute if score @s PrisonSize matches 2 if score @s PrisonRot matches 2 run data merge block ~ ~ ~ {name:"mkd:prison_medium",posX:5,posZ:5,rotation:"CLOCKWISE_180"}
+execute if score @s PrisonSize matches 2 if score @s PrisonRot matches 3 run data merge block ~ ~ ~ {name:"mkd:prison_medium",posX:-5,posZ:5,rotation:"COUNTERCLOCKWISE_90"}
 
 ## Merge data structure_block - big 
-execute if score @s PrisonSize matches 3 if score @s PrisonRot matches 0 run data merge block ~ ~ ~ {name:"mkd:prison_big",posX:-7,posZ:-6,rotation:"NONE"}
-execute if score @s PrisonSize matches 3 if score @s PrisonRot matches 1 run data merge block ~ ~ ~ {name:"mkd:prison_big",posX:6,posZ:-7,rotation:"CLOCKWISE_90"}
-execute if score @s PrisonSize matches 3 if score @s PrisonRot matches 2 run data merge block ~ ~ ~ {name:"mkd:prison_big",posX:7,posZ:6,rotation:"CLOCKWISE_180"}
-execute if score @s PrisonSize matches 3 if score @s PrisonRot matches 3 run data merge block ~ ~ ~ {name:"mkd:prison_big",posX:-6,posZ:7,rotation:"COUNTERCLOCKWISE_90"}
+execute if score @s PrisonSize matches 3 if score @s PrisonRot matches 0 run data merge block ~ ~ ~ {name:"mkd:prison_big",posX:-7,posZ:-7,rotation:"NONE"}
+execute if score @s PrisonSize matches 3 if score @s PrisonRot matches 1 run data merge block ~ ~ ~ {name:"mkd:prison_big",posX:7,posZ:-7,rotation:"CLOCKWISE_90"}
+execute if score @s PrisonSize matches 3 if score @s PrisonRot matches 2 run data merge block ~ ~ ~ {name:"mkd:prison_big",posX:7,posZ:7,rotation:"CLOCKWISE_180"}
+execute if score @s PrisonSize matches 3 if score @s PrisonRot matches 3 run data merge block ~ ~ ~ {name:"mkd:prison_big",posX:-7,posZ:7,rotation:"COUNTERCLOCKWISE_90"}
 
 ## Set redstone block
 setblock ~ ~1 ~ minecraft:redstone_block

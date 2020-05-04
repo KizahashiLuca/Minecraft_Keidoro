@@ -7,8 +7,8 @@
 ###############################
 
 ## Send exit messages
-tellraw @a ["",{"text":"           Police Win","color":"blue","bold":true}]
-tellraw @a ["",{"text":"          - 警察勝利 -","color":"blue","bold":true}]
+tellraw @a ["",{"text":" Police Win","color":"blue","bold":true}]
+tellraw @a ["",{"text":" - 警察勝利 -","color":"blue","bold":true}]
 tellraw @a ["",{"text":"-----------------------------","color":"white"}]
 tellraw @a [""]
 

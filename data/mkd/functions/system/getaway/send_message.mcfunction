@@ -10,9 +10,9 @@
 tellraw @a [""]
 tellraw @a ["",{"text":"-----------------------------","color":"white"}]
 tellraw @a ["",{"text":" Minecraft Keidoro alpha-0.1","color":"red","bold":true}]
-tellraw @a ["",{"text":" - マイクラ ケイドロ alpha-0.1 - ","color":"red","bold":true}]
-tellraw @a ["",{"text":"          Game Start","color":"green","bold":true}]
-tellraw @a ["",{"text":"         - ゲーム開始 -","color":"green","bold":true}]
+tellraw @a ["",{"text":" - マイクラ ケイドロ - ","color":"red","bold":true}]
+tellraw @a ["",{"text":" Game Start","color":"green","bold":true}]
+tellraw @a ["",{"text":" - ゲーム開始 -","color":"green","bold":true}]
 tellraw @a ["",{"text":"-----------------------------","color":"white"}]
 tellraw @a [""]
 

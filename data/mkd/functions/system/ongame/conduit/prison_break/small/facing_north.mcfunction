@@ -10,7 +10,7 @@
 function mkd:system/ongame/conduit/prison_break/common_pre
 
 ## Merge data structure_block - small - north
-data merge block ~ ~ ~ {name:"mkd:broken_prison_small",posX:-3,posZ:-2,rotation:"NONE"}
+data merge block ~ ~ ~ {name:"mkd:broken_prison_small",posX:-3,posZ:-3,rotation:"NONE"}
 
 ## Common
 function mkd:system/ongame/conduit/prison_break/common_post

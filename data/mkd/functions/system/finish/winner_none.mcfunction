@@ -7,8 +7,8 @@
 ###############################
 
 ## Send exit messages
-tellraw @a ["",{"text":"             Draw","color":"white","bold":true}]
-tellraw @a ["",{"text":"          - 引き分け -","color":"white","bold":true}]
+tellraw @a ["",{"text":" Draw","color":"white","bold":true}]
+tellraw @a ["",{"text":" - 引き分け -","color":"white","bold":true}]
 tellraw @a ["",{"text":"-----------------------------","color":"white"}]
 tellraw @a [""]
 

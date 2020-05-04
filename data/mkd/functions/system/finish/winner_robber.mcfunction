@@ -7,8 +7,8 @@
 ###############################
 
 ## Send exit messages
-tellraw @a ["",{"text":"           Robber Win","color":"red","bold":true}]
-tellraw @a ["",{"text":"          - 泥棒勝利 -","color":"red","bold":true}]
+tellraw @a ["",{"text":" Robber Win","color":"red","bold":true}]
+tellraw @a ["",{"text":" - 泥棒勝利 -","color":"red","bold":true}]
 tellraw @a ["",{"text":"-----------------------------","color":"white"}]
 tellraw @a [""]
 

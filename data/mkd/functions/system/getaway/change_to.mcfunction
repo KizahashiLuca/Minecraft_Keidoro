@@ -22,17 +22,20 @@ execute store result bossbar minecraft:bossbar value run scoreboard players get 
 
 ## Decide police
 scoreboard players operation #Keidoro NumPoliceTmp = #Keidoro NumPolice
+scoreboard players operation #Keidoro NumPoliceTmp -= #Keidoro NumPoliceSet
 scoreboard players set #Keidoro NumPlayerTmp 0
 execute as @a[team=Player] run scoreboard players add #Keidoro NumPlayerTmp 1
 function mkd:system/getaway/random_generator/initialize
-function mkd:system/getaway/random_generator/main_police
+execute unless score #Keidoro NumPoliceTmp matches ..0 run function mkd:system/getaway/random_generator/main_police
 function mkd:system/getaway/police/main
 
 ## Decide robber
 scoreboard players operation #Keidoro NumRobberTmp = #Keidoro NumRobber
+scoreboard players operation #Keidoro NumRobberTmp -= #Keidoro NumRobberSet
 scoreboard players set #Keidoro NumPlayerTmp 0
 execute as @a[team=Player] run scoreboard players add #Keidoro NumPlayerTmp 1
-function mkd:system/getaway/random_generator/main_robber
+execute unless score #Keidoro NumRobberTmp matches ..0 run function mkd:system/getaway/random_generator/main_robber
+team join Robber kizahashiluca
 tag @a[team=Robber] add Robber
 tag @a[team=Player] add Burglar
 team join Robber @a[team=Player]
