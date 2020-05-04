@@ -71,6 +71,8 @@ scoreboard objectives add NumPoliceMax dummy
 scoreboard objectives add NumPoliceMin dummy
 scoreboard objectives add NumPolicePrv dummy
 scoreboard objectives add NumPoliceTmp dummy
+scoreboard objectives add PoliceManual dummy
+scoreboard objectives add PoliceManualPrv dummy
 ## Add scoreboards for setting phase - choose num robber
 scoreboard objectives add NumRobberMax dummy
 scoreboard objectives add NumRobberMin dummy
@@ -127,6 +129,7 @@ scoreboard players set #Keidoro NumPoliceMax 1
 scoreboard players set #Keidoro NumPoliceMin 1
 scoreboard players set #Keidoro NumPolicePrv 1
 scoreboard players set #Keidoro NumPoliceTmp 1
+scoreboard players set #Keidoro PoliceManual 0
 ## Set scoreboards for setting phase - choose num police
 scoreboard players set #Keidoro NumRobberMax 1
 scoreboard players set #Keidoro NumRobberMin 1

@@ -70,6 +70,8 @@ scoreboard objectives remove NumPoliceMax
 scoreboard objectives remove NumPoliceMin
 scoreboard objectives remove NumPolicePrv
 scoreboard objectives remove NumPoliceTmp
+scoreboard objectives remove PoliceManual
+scoreboard objectives remove PoliceManualPrv
 ## Remove scoreboards for setting phase - choose num robber
 scoreboard objectives remove NumRobberMax
 scoreboard objectives remove NumRobberMin

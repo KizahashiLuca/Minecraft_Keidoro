@@ -14,6 +14,8 @@ execute if score #Keidoro NumRobber > #Keidoro NumRobberMax run scoreboard playe
 
 ## Send number of police messages
 tellraw @a ["",{"text":"[初期設定] 警察人数は ","color":"green"},{"score":{"name":"#Keidoro","objective":"NumPolice"},"color":"green","bold":true},{"text":"人","color":"green","bold":true},{"text":" に設定されました。","color":"green"}]
+execute if score #Keidoro PoliceManual matches 1 run tellraw @a ["",{"text":"[初期設定] 警察設定は ","color":"green"},{"text":"手動","color":"green","bold":true},{"text":" に設定されました。","color":"green"}]
+execute if score #Keidoro PoliceManual matches 0 run tellraw @a ["",{"text":"[初期設定] 警察設定は ","color":"green"},{"text":"ランダム","color":"green","bold":true},{"text":" に設定されました。","color":"green"}]
 
 ## Change to choose setting
 function mkd:system/setting/choose_setting/change_to

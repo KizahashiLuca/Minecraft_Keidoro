@@ -16,6 +16,7 @@ function mkd:system/setting/choose_num_police/set_inventory
 scoreboard players operation #Keidoro NumPoliceMax = #Keidoro NumPlayer
 scoreboard players operation #Keidoro NumPoliceMax /= #Keidoro 3
 scoreboard players set @p[tag=Host] ThrowItem 0
+scoreboard players set @p[tag=Host] Select13 0
 scoreboard players set @p[tag=Host] Select19 0
 scoreboard players set @p[tag=Host] Select20 0
 scoreboard players set @p[tag=Host] Select22 0
