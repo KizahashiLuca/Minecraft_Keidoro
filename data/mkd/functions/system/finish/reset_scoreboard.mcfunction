@@ -10,6 +10,7 @@
 scoreboard objectives remove Phase
 scoreboard objectives remove Death
 scoreboard objectives remove Arrested
+scoreboard objectives remove NumAlive
 scoreboard objectives remove SpawnTime
 scoreboard objectives remove UseConduit
 scoreboard objectives remove HasConduit
@@ -98,4 +99,5 @@ scoreboard objectives remove PrisonNumber
 
 ## Remove players
 scoreboard players reset @a
+scoreboard players reset 残り
 scoreboard players reset #Keidoro

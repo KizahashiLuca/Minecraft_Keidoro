@@ -1,10 +1,11 @@
 ###############################
 ## Minecraft Version 1.15.2
-## Minecraft Werewolf Light
+## Minecraft Keidoro
 ## Author : KizahashiLuca
-## Date   : 24 February 2020
-## Version: beta-1.6
+## Date   : 02 May 2020
+## Version: alpha-0.1
 ###############################
+
 
 ## Detect Page Role
 execute if score @s ROLE_PAGE matches 0 if score @s ROLE_L_PAGE matches 1 run scoreboard players operation @s ROLE_PAGE = Time ROLE_PAGE_NUM

@@ -35,7 +35,6 @@ scoreboard players operation #Keidoro NumRobberTmp -= #Keidoro NumRobberSet
 scoreboard players set #Keidoro NumPlayerTmp 0
 execute as @a[team=Player] run scoreboard players add #Keidoro NumPlayerTmp 1
 execute unless score #Keidoro NumRobberTmp matches ..0 run function mkd:system/getaway/random_generator/main_robber
-team join Robber kizahashiluca
 tag @a[team=Robber] add Robber
 tag @a[team=Player] add Burglar
 team join Robber @a[team=Player]
@@ -53,6 +52,9 @@ function mkd:system/getaway/police/random_spawn_main
 scoreboard players operation #Keidoro NumPlayerTmp = #Keidoro NumBurglar
 function mkd:system/getaway/robber/random_spawn_main
 tag @a remove SetRespawn
+
+## Set rest of alive robber
+scoreboard players operation 残り NumAlive = #Keidoro NumBurglar
 
 ## Sende messages
 function mkd:system/getaway/police/send_message

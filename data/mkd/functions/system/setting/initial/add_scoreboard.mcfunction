@@ -11,6 +11,8 @@ scoreboard objectives add Phase dummy
 scoreboard objectives add Death deathCount
 scoreboard objectives add Arrested deathCount
 scoreboard objectives setdisplay list Arrested
+scoreboard objectives add NumAlive dummy {"text":"泥棒人数"}
+scoreboard objectives setdisplay sidebar NumAlive
 scoreboard objectives add SpawnTime minecraft.custom:minecraft.time_since_death
 scoreboard objectives add UseConduit minecraft.used:minecraft.conduit
 scoreboard objectives add HasConduit dummy

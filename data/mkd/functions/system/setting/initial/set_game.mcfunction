@@ -26,6 +26,9 @@ experience set @a 0 points
 gamemode adventure @a[gamemode=!spectator]
 recipe give @a mkd:tnt
 
+## Set effect
+effect give @a[gamemode=!spectator] minecraft:resistance 1000000 6 true
+
 ## Add tags
 tag @p[sort=nearest] add Host
 
