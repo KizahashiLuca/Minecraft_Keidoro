@@ -59,7 +59,7 @@ function mkd:system/setting/initial/add_scoreboard
 execute as @a[team=Player] run scoreboard players add #Keidoro NumPlayer 1
 
 ## Test
-scoreboard players set #Keidoro NumPlayer 9
+#scoreboard players set #Keidoro NumPlayer 9
 
 ## Send messages
 execute if score #Keidoro NumPlayer matches 3.. run function mkd:system/setting/initial/send_message
