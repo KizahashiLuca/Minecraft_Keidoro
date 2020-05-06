@@ -22,5 +22,7 @@ scoreboard players set @p[tag=Host] Select28 0
 scoreboard players set @p[tag=Host] Select34 0
 scoreboard players set @p[tag=Host] PrisonStick 0
 
+scoreboard objectives setdisplay sidebar Detected
+
 ## Change phase
 scoreboard players set #Keidoro Phase 99

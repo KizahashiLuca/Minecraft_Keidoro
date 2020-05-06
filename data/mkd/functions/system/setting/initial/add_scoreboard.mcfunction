@@ -10,9 +10,7 @@
 scoreboard objectives add Phase dummy
 scoreboard objectives add Death deathCount
 scoreboard objectives add Arrested deathCount
-scoreboard objectives setdisplay list Arrested
 scoreboard objectives add NumAlive dummy {"text":"泥棒人数"}
-scoreboard objectives setdisplay sidebar NumAlive
 scoreboard objectives add SpawnTime minecraft.custom:minecraft.time_since_death
 scoreboard objectives add UseConduit minecraft.used:minecraft.conduit
 scoreboard objectives add HasConduit dummy
@@ -156,6 +154,8 @@ scoreboard players set #Keidoro PrisonPosY 0
 scoreboard players set #Keidoro PrisonPosZ 0
 scoreboard players set @p[tag=Host] PrisonStick 0
 scoreboard players set #Keidoro SetNumPrison 0
-## Add scoreboards for prison state
+## Set scoreboards for prison state
 scoreboard players set #Keidoro PrisonRot 0
 scoreboard players set #Keidoro PrisonNumber 0
+## Set scoreboards for setting phase - choose whom police
+scoreboard players set @a Detected 0

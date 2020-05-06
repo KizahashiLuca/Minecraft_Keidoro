@@ -20,3 +20,4 @@ give @s minecraft:tipped_arrow{display:{Name:"\"\\u00A7r\\u00A7bスタングレ�
 
 ## Reset scoreboard
 scoreboard players set @s Death 0
+scoreboard players set @s Arrested 0

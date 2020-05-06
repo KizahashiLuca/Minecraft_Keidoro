@@ -8,6 +8,7 @@
 
 ## Calculate prison stick number
 execute if score @p[tag=Host] PrisonStick matches 1.. unless entity @e[type=minecraft:area_effect_cloud,nbt={Tags:["police"]},scores={SetPolice=3}] run function mkd:system/setting/choose_whom_police/area_select
+execute as @a[team=Player] run function mkd:system/setting/choose_whom_police/police_detected
 
 ## Detect dropping
 scoreboard players set @e[type=minecraft:item,nbt={Item:{id:"minecraft:carrot_on_a_stick",tag:{display:{Name:"\"\\u00A7r警察設定場所設置棒\""},HideFlags:39}}}] ThrowItem 1
@@ -35,5 +36,5 @@ execute if score @p[tag=Host] Select04 matches 1 run function mkd:system/setting
 execute if score @p[tag=Host] Select13 matches 1 run function mkd:system/setting/choose_whom_police/change_to
 execute if score @p[tag=Host] Select22 matches 1 run function mkd:system/setting/choose_whom_police/setter_remove
 execute if score @p[tag=Host] Select28 matches 1 run function mkd:stop
-execute if score @p[tag=Host] Select34 matches 1 if entity @e[type=minecraft:area_effect_cloud,nbt={Tags:["police"]},scores={SetPolice=3}] run function mkd:system/setting/choose_whom_police/send_message
 execute if score @p[tag=Host] Select34 matches 1 unless entity @e[type=minecraft:area_effect_cloud,nbt={Tags:["police"]},scores={SetPolice=3}] run function mkd:system/setting/choose_whom_police/send_error_message
+execute if score @p[tag=Host] Select34 matches 1 if entity @e[type=minecraft:area_effect_cloud,nbt={Tags:["police"]},scores={SetPolice=3}] run function mkd:system/setting/choose_whom_police/send_message

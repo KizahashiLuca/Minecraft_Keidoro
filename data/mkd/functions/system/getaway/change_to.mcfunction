@@ -12,6 +12,8 @@ clear @a
 ## Set scoreboards
 scoreboard players set #Keidoro TICK 0
 scoreboard players operation #Keidoro SECOND = #Keidoro TimeGetaway
+scoreboard objectives setdisplay list Arrested
+scoreboard objectives setdisplay sidebar NumAlive
 
 ## Set bossbar
 bossbar add minecraft:bossbar [{"text":"逃走時間  残り "},{"score":{"name":"#Keidoro","objective":"SECOND"}},{"text":" 秒"}]
@@ -56,9 +58,13 @@ tag @a remove SetRespawn
 ## Set rest of alive robber
 scoreboard players operation 残り NumAlive = #Keidoro NumBurglar
 
-## Sende messages
+## Send messages
 function mkd:system/getaway/police/send_message
 function mkd:system/getaway/robber/send_message
+
+## Remove police setter
+execute as @e[type=minecraft:area_effect_cloud,nbt={Tags:["police"]},scores={SetPolice=3}] at @s run function mkd:system/setting/choose_whom_police/area_load
+execute as @e[type=minecraft:area_effect_cloud,nbt={Tags:["police"]},scores={SetPolice=3}] run kill @s
 
 ## Change phase
 scoreboard players set #Keidoro Phase 100

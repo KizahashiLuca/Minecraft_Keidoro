@@ -7,7 +7,6 @@
 ###############################
 
 ## Decide police
-execute as @a[team=Player] run function mkd:system/setting/choose_whom_police/police_detected
 scoreboard players set #Keidoro NumPoliceSet 0
 scoreboard players operation #Keidoro NumPoliceTmp = #Keidoro NumPolice
 scoreboard players set #Keidoro NumPlayerTmp 0
@@ -16,9 +15,6 @@ execute if score #Keidoro NumPlayerTmp >= #Keidoro NumPoliceTmp run scoreboard p
 
 function mkd:system/getaway/random_generator/initialize
 execute unless score #Keidoro NumPoliceTmp matches ..0 run function mkd:system/setting/choose_whom_police/police_random
-
-## Remove police setter
-execute as @e[type=minecraft:area_effect_cloud,nbt={Tags:["police"]}] at @s run function mkd:system/setting/choose_whom_police/area_load
 
 ## Send messages
 tellraw @a [""]

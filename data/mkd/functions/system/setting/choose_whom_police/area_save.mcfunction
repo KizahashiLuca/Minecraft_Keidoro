@@ -22,15 +22,15 @@ execute as @e[type=minecraft:area_effect_cloud,nbt={Tags:["police"]},scores={Set
 execute as @e[type=minecraft:area_effect_cloud,nbt={Tags:["police"]},scores={SetPolice=1}] store result score @s PrisonPosY run data get entity @s Pos[1] 1
 execute as @e[type=minecraft:area_effect_cloud,nbt={Tags:["police"]},scores={SetPolice=1}] store result score @s PrisonPosZ run data get entity @s Pos[2] 1
 
-scoreboard players operation @s PrisonMaxX = @s PrisonPosX
-scoreboard players operation @s PrisonMaxY = @s PrisonPosY
-scoreboard players operation @s PrisonMaxZ = @s PrisonPosZ
-scoreboard players operation @s PrisonMinX = @s PrisonPosX
-scoreboard players operation @s PrisonMinY = @s PrisonPosY
-scoreboard players operation @s PrisonMinZ = @s PrisonPosZ
+execute as @e[type=minecraft:area_effect_cloud,nbt={Tags:["police"]},scores={SetPolice=1}] run scoreboard players operation @s PrisonMaxX = @s PrisonPosX
+execute as @e[type=minecraft:area_effect_cloud,nbt={Tags:["police"]},scores={SetPolice=1}] run scoreboard players operation @s PrisonMaxY = @s PrisonPosY
+execute as @e[type=minecraft:area_effect_cloud,nbt={Tags:["police"]},scores={SetPolice=1}] run scoreboard players operation @s PrisonMaxZ = @s PrisonPosZ
+execute as @e[type=minecraft:area_effect_cloud,nbt={Tags:["police"]},scores={SetPolice=1}] run scoreboard players operation @s PrisonMinX = @s PrisonPosX
+execute as @e[type=minecraft:area_effect_cloud,nbt={Tags:["police"]},scores={SetPolice=1}] run scoreboard players operation @s PrisonMinY = @s PrisonPosY
+execute as @e[type=minecraft:area_effect_cloud,nbt={Tags:["police"]},scores={SetPolice=1}] run scoreboard players operation @s PrisonMinZ = @s PrisonPosZ
 
-scoreboard players add @s PrisonMaxX 2
-scoreboard players add @s PrisonMaxZ 2
-scoreboard players remove @s PrisonMinX 2
-scoreboard players remove @s PrisonMinZ 2
-scoreboard players add @s PrisonMaxY 3
+execute as @e[type=minecraft:area_effect_cloud,nbt={Tags:["police"]},scores={SetPolice=1}] run scoreboard players add @s PrisonMaxX 2
+execute as @e[type=minecraft:area_effect_cloud,nbt={Tags:["police"]},scores={SetPolice=1}] run scoreboard players add @s PrisonMaxZ 2
+execute as @e[type=minecraft:area_effect_cloud,nbt={Tags:["police"]},scores={SetPolice=1}] run scoreboard players remove @s PrisonMinX 2
+execute as @e[type=minecraft:area_effect_cloud,nbt={Tags:["police"]},scores={SetPolice=1}] run scoreboard players remove @s PrisonMinZ 2
+execute as @e[type=minecraft:area_effect_cloud,nbt={Tags:["police"]},scores={SetPolice=1}] run scoreboard players add @s PrisonMaxY 3
