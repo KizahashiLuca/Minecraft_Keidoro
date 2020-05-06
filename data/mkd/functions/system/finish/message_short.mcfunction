@@ -2,14 +2,14 @@
 ## Minecraft Version 1.15.2
 ## Minecraft Keidoro
 ## Author : KizahashiLuca
-## Date   : 02 May 2020
-## Version: alpha-0.1
+## Date   : 06 May 2020
+## Version: alpha-0.2
 ###############################
 
 ## Send reject messages
 tellraw @a [""]
 tellraw @a ["",{"text":"-----------------------------","color":"white"}]
-tellraw @a ["",{"text":" Minecraft Keidoro alpha-0.1","color":"red","bold":true}]
+tellraw @a ["",{"text":" Minecraft Keidoro alpha-0.2","color":"red","bold":true}]
 tellraw @a ["",{"text":" - マイクラ ケイドロ - ","color":"red","bold":true}]
 tellraw @a ["",{"text":" Error","color":"yellow","bold":true}]
 tellraw @a ["",{"text":" - エラー -","color":"yellow","bold":true}]

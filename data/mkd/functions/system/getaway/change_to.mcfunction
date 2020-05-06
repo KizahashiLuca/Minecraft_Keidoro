@@ -2,8 +2,8 @@
 ## Minecraft Version 1.15.2
 ## Minecraft Keidoro
 ## Author : KizahashiLuca
-## Date   : 02 May 2020
-## Version: alpha-0.1
+## Date   : 06 May 2020
+## Version: alpha-0.2
 ###############################
 
 ## Clear inventory
@@ -27,7 +27,6 @@ scoreboard players operation #Keidoro NumPoliceTmp = #Keidoro NumPolice
 scoreboard players operation #Keidoro NumPoliceTmp -= #Keidoro NumPoliceSet
 scoreboard players set #Keidoro NumPlayerTmp 0
 execute as @a[team=Player] run scoreboard players add #Keidoro NumPlayerTmp 1
-function mkd:system/getaway/random_generator/initialize
 execute unless score #Keidoro NumPoliceTmp matches ..0 run function mkd:system/getaway/random_generator/main_police
 function mkd:system/getaway/police/main
 

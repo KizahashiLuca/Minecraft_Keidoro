@@ -159,3 +159,6 @@ scoreboard players set #Keidoro PrisonRot 0
 scoreboard players set #Keidoro PrisonNumber 0
 ## Set scoreboards for setting phase - choose whom police
 scoreboard players set @a Detected 0
+
+## Random
+function mkd:system/getaway/random_generator/initialize
