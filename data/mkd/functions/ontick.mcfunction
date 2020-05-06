@@ -16,9 +16,10 @@ execute if score #Keidoro Phase matches 92 run function mkd:system/setting/choos
 execute if score #Keidoro Phase matches 93 run function mkd:system/setting/choose_num_robber/main
 execute if score #Keidoro Phase matches 94 run function mkd:system/setting/choose_time_getaway/main
 execute if score #Keidoro Phase matches 95 run function mkd:system/setting/choose_time_limit/main
-execute if score #Keidoro Phase matches 97 run function mkd:system/setting/choose_whom_police/main
 execute if score #Keidoro Phase matches 98 run function mkd:system/setting/choose_where_prison/main
+execute if score #Keidoro Phase matches 99 run function mkd:system/setting/choose_whom_police/main
 execute if score #Keidoro Phase matches 100 run function mkd:system/getaway/main
-execute if score #Keidoro Phase matches 90..100 as @a run function mkd:system/setting/choose_where_prison/area_teleport/main
+execute if score #Keidoro Phase matches 99 as @a run function mkd:system/setting/choose_whom_police/area_teleport
+execute if score #Keidoro Phase matches 98..100 as @a run function mkd:system/setting/choose_where_prison/area_teleport/main
 execute if score #Keidoro Phase matches 10 run function mkd:system/ongame/main
 execute if score #Keidoro Phase matches 11..12 run function mkd:system/finish/game_exit

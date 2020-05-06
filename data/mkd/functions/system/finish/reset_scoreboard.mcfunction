@@ -22,7 +22,8 @@ scoreboard objectives remove NumRobber
 scoreboard objectives remove NumBurglar
 scoreboard objectives remove TimeGetaway
 scoreboard objectives remove TimeLimit
-scoreboard objectives remove Teleport
+scoreboard objectives remove TeleportPrison
+scoreboard objectives remove TeleportPolice
 scoreboard objectives remove SECOND
 scoreboard objectives remove TICK
 ## Remove scoreboards for prison area
@@ -96,6 +97,9 @@ scoreboard objectives remove PrisonRot
 scoreboard objectives remove PrisonSize
 scoreboard objectives remove PrisonBroken
 scoreboard objectives remove PrisonNumber
+## Remove scoreboards for setting phase - choose whom police
+scoreboard objectives remove SetPolice
+scoreboard objectives remove Detected
 
 ## Remove players
 scoreboard players reset @a

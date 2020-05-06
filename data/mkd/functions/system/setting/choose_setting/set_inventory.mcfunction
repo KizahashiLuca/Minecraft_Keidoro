@@ -14,5 +14,4 @@ replaceitem entity @p[tag=Host] inventory.14 minecraft:clock{display:{Name:"\"\\
 replaceitem entity @p[tag=Host] inventory.15 minecraft:clock{display:{Name:"\"\\u00A7r制限時間設定\""},HideFlags:39} 1
 
 replaceitem entity @p[tag=Host] inventory.19 minecraft:barrier{display:{Name:"\"\\u00A7r\\u00A7dゲームキャンセル\""},HideFlags:39} 1
-execute if score #Keidoro PoliceManual matches 1 run replaceitem entity @p[tag=Host] inventory.25 minecraft:structure_void{display:{Name:"\"\\u00A7r\\u00A7b警察手動設定へ\""},HideFlags:39} 1
-execute if score #Keidoro PoliceManual matches 0 run replaceitem entity @p[tag=Host] inventory.25 minecraft:structure_void{display:{Name:"\"\\u00A7r\\u00A7b牢屋箇所設定へ\""},HideFlags:39} 1
+replaceitem entity @p[tag=Host] inventory.25 minecraft:structure_void{display:{Name:"\"\\u00A7r\\u00A7b牢屋箇所設定へ\""},HideFlags:39} 1

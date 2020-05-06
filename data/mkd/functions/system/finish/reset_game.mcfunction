@@ -6,6 +6,9 @@
 ## Version: alpha-0.1
 ###############################
 
+## Remove police setter
+execute as @e[type=minecraft:area_effect_cloud,nbt={Tags:["police"]}] at @s run function mkd:system/setting/choose_whom_police/area_load
+
 ## Reset prison
 scoreboard players operation #Keidoro PrisonNumber = #Keidoro NumPrison
 function mkd:system/finish/reset_prison
@@ -30,6 +33,8 @@ tag @a remove SetRespawn
 tag @a remove SettingRespawn
 tag @s remove DetectArrest
 tag @s remove Arrested
+tag @a remove DetectPolice
+tag @a remove Detected
 
 ## Reset players
 kill @e[type=minecraft:item]

@@ -54,7 +54,8 @@ scoreboard players set @p[tag=Host,nbt={Inventory:[{Slot:22b,id:"minecraft:iron_
 scoreboard players set @p[tag=Host,nbt={Inventory:[{Slot:23b,id:"minecraft:iron_door",tag:{display:{Name:"\"\\u00A7r4箇所目を除去\""},HideFlags:39}}]}] Select23 0
 scoreboard players set @p[tag=Host,nbt={Inventory:[{Slot:24b,id:"minecraft:iron_door",tag:{display:{Name:"\"\\u00A7r5箇所目を除去\""},HideFlags:39}}]}] Select24 0
 scoreboard players set @p[tag=Host,nbt={Inventory:[{Slot:28b,id:"minecraft:barrier",tag:{display:{Name:"\"\\u00A7r\\u00A7dゲームキャンセル\""},HideFlags:39}}]}] Select28 0
-scoreboard players set @p[tag=Host,nbt={Inventory:[{Slot:34b,id:"minecraft:structure_void",tag:{display:{Name:"\"\\u00A7r\\u00A7bゲームスタート\""},HideFlags:39}}]}] Select34 0
+execute if score #Keidoro PoliceManual matches 0 run scoreboard players set @p[tag=Host,nbt={Inventory:[{Slot:34b,id:"minecraft:structure_void",tag:{display:{Name:"\"\\u00A7r\\u00A7bゲームスタート\""},HideFlags:39}}]}] Select34 0
+execute if score #Keidoro PoliceManual matches 1 run scoreboard players set @p[tag=Host,nbt={Inventory:[{Slot:34b,id:"minecraft:structure_void",tag:{display:{Name:"\"\\u00A7r\\u00A7b警察設定箇所設置へ\""},HideFlags:39}}]}] Select34 0
 
 ## Change to each phase
 execute if score @p[tag=Host] Select02 matches 1 run function mkd:system/setting/choose_where_prison/change_to
@@ -72,4 +73,5 @@ execute if score @p[tag=Host] Select23 matches 1 run function mkd:system/setting
 execute if score @p[tag=Host] Select24 matches 1 run function mkd:system/setting/choose_where_prison/prison_remove
 execute if score @p[tag=Host] Select28 matches 1 run function mkd:stop
 execute if score @p[tag=Host] Select34 matches 1 unless score #Keidoro NumPrison = #Keidoro SetNumPrison run function mkd:system/setting/choose_where_prison/send_error_message
-execute if score @p[tag=Host] Select34 matches 1 if score #Keidoro NumPrison = #Keidoro SetNumPrison run function mkd:system/setting/choose_where_prison/send_message
+execute if score @p[tag=Host] Select34 matches 1 if score #Keidoro PoliceManual matches 0 if score #Keidoro NumPrison = #Keidoro SetNumPrison run function mkd:system/setting/choose_where_prison/send_getaway_message
+execute if score @p[tag=Host] Select34 matches 1 if score #Keidoro PoliceManual matches 1 if score #Keidoro NumPrison = #Keidoro SetNumPrison run function mkd:system/setting/choose_where_prison/send_police_message

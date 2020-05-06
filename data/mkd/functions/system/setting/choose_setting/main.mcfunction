@@ -13,7 +13,6 @@ scoreboard players set @e[type=minecraft:item,nbt={Item:{id:"minecraft:arrow",ta
 scoreboard players set @e[type=minecraft:item,nbt={Item:{id:"minecraft:clock",tag:{display:{Name:"\"\\u00A7r逃走時間設定\""},HideFlags:39}}}] ThrowItem 1
 scoreboard players set @e[type=minecraft:item,nbt={Item:{id:"minecraft:clock",tag:{display:{Name:"\"\\u00A7r制限時間設定\""},HideFlags:39}}}] ThrowItem 1
 scoreboard players set @e[type=minecraft:item,nbt={Item:{id:"minecraft:barrier",tag:{display:{Name:"\"\\u00A7r\\u00A7dゲームキャンセル\""},HideFlags:39}}}] ThrowItem 1
-scoreboard players set @e[type=minecraft:item,nbt={Item:{id:"minecraft:structure_void",tag:{display:{Name:"\"\\u00A7r\\u00A7b警察手動設定へ\""},HideFlags:39}}}] ThrowItem 1
 scoreboard players set @e[type=minecraft:item,nbt={Item:{id:"minecraft:structure_void",tag:{display:{Name:"\"\\u00A7r\\u00A7b牢屋箇所設定へ\""},HideFlags:39}}}] ThrowItem 1
 execute as @e[type=minecraft:item,scores={ThrowItem=1}] run function mkd:system/setting/choose_setting/drop
 
@@ -32,8 +31,7 @@ scoreboard players set @p[tag=Host,nbt={Inventory:[{Slot:22b,id:"minecraft:arrow
 scoreboard players set @p[tag=Host,nbt={Inventory:[{Slot:23b,id:"minecraft:clock",tag:{display:{Name:"\"\\u00A7r逃走時間設定\""},HideFlags:39}}]}] Select23 0
 scoreboard players set @p[tag=Host,nbt={Inventory:[{Slot:24b,id:"minecraft:clock",tag:{display:{Name:"\"\\u00A7r制限時間設定\""},HideFlags:39}}]}] Select24 0
 scoreboard players set @p[tag=Host,nbt={Inventory:[{Slot:28b,id:"minecraft:barrier",tag:{display:{Name:"\"\\u00A7r\\u00A7dゲームキャンセル\""},HideFlags:39}}]}] Select28 0
-execute if score #Keidoro PoliceManual matches 1 run scoreboard players set @p[tag=Host,nbt={Inventory:[{Slot:34b,id:"minecraft:structure_void",tag:{display:{Name:"\"\\u00A7r\\u00A7b警察手動設定へ\""},HideFlags:39}}]}] Select34 0
-execute if score #Keidoro PoliceManual matches 0 run scoreboard players set @p[tag=Host,nbt={Inventory:[{Slot:34b,id:"minecraft:structure_void",tag:{display:{Name:"\"\\u00A7r\\u00A7b牢屋箇所設定へ\""},HideFlags:39}}]}] Select34 0
+scoreboard players set @p[tag=Host,nbt={Inventory:[{Slot:34b,id:"minecraft:structure_void",tag:{display:{Name:"\"\\u00A7r\\u00A7b牢屋箇所設定へ\""},HideFlags:39}}]}] Select34 0
 
 ## Change to each phase
 execute if score @p[tag=Host] Select20 matches 1 run function mkd:system/setting/choose_num_prison/change_to

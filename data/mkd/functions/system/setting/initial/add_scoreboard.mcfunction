@@ -24,7 +24,8 @@ scoreboard objectives add NumRobber dummy
 scoreboard objectives add NumBurglar dummy
 scoreboard objectives add TimeLimit dummy
 scoreboard objectives add TimeGetaway dummy
-scoreboard objectives add Teleport trigger
+scoreboard objectives add TeleportPrison trigger
+scoreboard objectives add TeleportPolice trigger
 scoreboard objectives add SECOND dummy
 scoreboard objectives add TICK dummy
 ## Add scoreboards for prison area
@@ -98,6 +99,9 @@ scoreboard objectives add PrisonRot dummy
 scoreboard objectives add PrisonSize dummy
 scoreboard objectives add PrisonBroken dummy
 scoreboard objectives add PrisonNumber dummy
+## Add scoreboards for setting phase - choose whom police
+scoreboard objectives add SetPolice dummy
+scoreboard objectives add Detected dummy
 
 ## Set scoreboards for game phase
 scoreboard players set #Keidoro Phase 0
@@ -111,7 +115,8 @@ scoreboard players set #Keidoro NumRobber 1
 scoreboard players set #Keidoro NumBurglar 1
 scoreboard players set #Keidoro TimeLimit 20
 scoreboard players set #Keidoro TimeGetaway 90
-scoreboard players enable @a Teleport
+scoreboard players enable @a TeleportPrison
+scoreboard players enable @a TeleportPolice
 scoreboard players set #Keidoro SECOND 0
 scoreboard players set #Keidoro TICK 0
 ## Add scoreboards for getaway phase

@@ -10,11 +10,11 @@
 tag @s add Teleport
 
 ## Teleport
-execute as @e[type=minecraft:area_effect_cloud,nbt={Tags:["save"]},scores={SetPrison=3}] if score @p[tag=Teleport] Teleport = @s PrisonNumber run function mkd:system/setting/choose_where_prison/area_teleport/sub
+execute as @e[type=minecraft:area_effect_cloud,nbt={Tags:["save"]},scores={SetPrison=3}] if score @p[tag=Teleport] TeleportPrison = @s PrisonNumber run function mkd:system/setting/choose_where_prison/area_teleport/sub
 
 ## Reset scoreboard
-scoreboard players reset @s Teleport
-scoreboard players enable @s Teleport
+scoreboard players reset @s TeleportPrison
+scoreboard players enable @s TeleportPrison
 
 ## Remove tag
 tag @p[tag=Teleport] remove Teleport

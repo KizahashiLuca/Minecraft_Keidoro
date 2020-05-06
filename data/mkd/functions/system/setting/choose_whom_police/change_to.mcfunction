@@ -10,12 +10,17 @@
 clear @p[tag=Host]
 kill @e[type=minecraft:item]
 
-## Set chat
-function mkd:system/setting/choose_whom_police/message01
+## Set inventory
+function mkd:system/setting/choose_whom_police/set_inventory
 
 ## Set scoreboard
 scoreboard players set @p[tag=Host] ThrowItem 0
 scoreboard players set @p[tag=Host] Select04 0
+scoreboard players set @p[tag=Host] Select13 0
+scoreboard players set @p[tag=Host] Select22 0
+scoreboard players set @p[tag=Host] Select28 0
+scoreboard players set @p[tag=Host] Select34 0
+scoreboard players set @p[tag=Host] PrisonStick 0
 
 ## Change phase
-scoreboard players set #Keidoro Phase 97
+scoreboard players set #Keidoro Phase 99
