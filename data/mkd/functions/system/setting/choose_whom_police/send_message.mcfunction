@@ -11,7 +11,7 @@ scoreboard players set #Keidoro NumPoliceSet 0
 scoreboard players operation #Keidoro NumPoliceTmp = #Keidoro NumPolice
 scoreboard players set #Keidoro NumPlayerTmp 0
 execute as @a[team=Player,scores={Detected=1}] run scoreboard players add #Keidoro NumPlayerTmp 1
-execute if score #Keidoro NumPlayerTmp >= #Keidoro NumPoliceTmp run scoreboard players operation #Keidoro NumPoliceTmp = #Keidoro NumPlayerTmp
+execute if score #Keidoro NumPlayerTmp <= #Keidoro NumPoliceTmp run scoreboard players operation #Keidoro NumPoliceTmp = #Keidoro NumPlayerTmp
 
 function mkd:system/getaway/random_generator/initialize
 execute unless score #Keidoro NumPoliceTmp matches ..0 run function mkd:system/setting/choose_whom_police/police_random_main
