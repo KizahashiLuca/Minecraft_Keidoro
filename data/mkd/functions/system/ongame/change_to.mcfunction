@@ -8,6 +8,7 @@
 
 ## Clear inventory
 effect clear @a
+effect give @a[team=police] minecraft:resistance 10 6 true
 
 ## Set scoreboards
 scoreboard players set #Keidoro TICK 0
