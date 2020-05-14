@@ -3,9 +3,12 @@
 
 ## Caution!!
  - 実況でご利用の際は以下項目の記載をお願い致します。
-    - 企画者    : ぽたーじゅ @potage00
-    - 作成者    : きざはしるか @KizahashiLuca
-    - 配布元URL : https://github.com/KizahashiLuca/minecraft_keidoro
+   - 企画者 : ぽたーじゅ
+     - Twitter : [https://twitter.com/potage00](https://twitter.com/potage00)
+     - YouTube : [https://youtube.com/c/potage00](https://youtube.com/c/potage00)
+   - 作成者 : きざはしるか
+     - Twitter : [https://twitter.com/KizahashiLuca](https://twitter.com/KizahashiLuca)
+   - 配布元URL : [https://github.com/KizahashiLuca/minecraft_keidoro](https://github.com/KizahashiLuca/minecraft_keidoro)
  - 良識の範囲内で、ルールとマナーを守って遊びましょう。
  - 配布に関して問題があれば削除いたします。ご了承ください。
  - 再配布は禁止です。
